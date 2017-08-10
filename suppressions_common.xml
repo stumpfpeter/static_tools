@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+    <suppress checks="MagicNumber" files=".*[/\\]*Test.java" />
+    <suppress checks="JavadocMethod" files=".*[/\\]*Test.java" />
+    <suppress checks="AvoidStarImport" files=".*[/\\]*Test.java" />
+    <suppress checks="MethodLength" files=".*[/\\]*Test.java" />
+    <suppress id="ClassFanOutComplexity_Normal_Error" files=".*[/\\]*Test.java" />
+	<suppress id="ClassFanOutComplexity_Normal_Error" files=".*[/\\]*Facade.java" />
+	<suppress checks="FileLengthCheck" files=".*[/\\]*Test.java" />
+	<suppress checks="FileLengthCheck" files=".*[/\\]domain[/\\]*" />
+    <suppress checks="FileLengthCheck" files=".*[/\\]*.properties" />
+	<!--Flat classes (like: Transformers) are not checked with normal MethodLength. -->
+	<suppress id="MethodLength_Warning" files=".*[/\\]*Transformer.java" />
+	<suppress id="MethodLength_Error" files=".*[/\\]*Transformer.java" />
+    <suppress id="MethodLength_Error" files=".*[/\\]*Transformer.java" />
+    <suppress checks="[a-zA-Z0-9]*" files=".*[/\\]*.jks"/>
+    <suppress checks="[a-zA-Z0-9]*" files=".*[/\\]*.png"/>
+    <suppress checks="[a-zA-Z0-9]*" files=".*[/\\]*.cer"/>
+    <suppress checks="FileLengthCheck" files=".*[/\\]*.messages.properties"/>
+</suppressions>
